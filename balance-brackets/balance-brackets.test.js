@@ -7,3 +7,7 @@ test('[] is balanced', () => {
 test('() is balanced', () => {
   expect(balanceBrackets('()')).toBeTruthy();
 });
+
+test('( is not balanced', () => {
+  expect(balanceBrackets('(')).toReturn(false)
+})

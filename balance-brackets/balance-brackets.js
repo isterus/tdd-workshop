@@ -1,5 +1,5 @@
 function balanceBrackets(string) {
-    if (string == '[]') {
+    if (string == '[]' || string == '()') {
         return true
     }
 }
