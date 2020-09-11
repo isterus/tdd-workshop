@@ -9,5 +9,9 @@ test('() is balanced', () => {
 });
 
 test('( is not balanced', () => {
-  expect(balanceBrackets('(')).toReturn(false)
+  expect(balanceBrackets('(')).toEqual(false)
+})
+
+test('({[]}) is balanced', () => {
+  expect(balanceBrackets('({[]})')).toBeTruthy()
 })
