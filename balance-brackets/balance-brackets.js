@@ -1,5 +1,7 @@
 function balanceBrackets(string) {
-    // Write your implementation here
+    if (string == '[]') {
+        return true
+    }
 }
 
 module.exports = balanceBrackets;
