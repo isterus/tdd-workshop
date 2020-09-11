@@ -15,3 +15,7 @@ test('( is not balanced', () => {
 test('({[]}) is balanced', () => {
   expect(balanceBrackets('({[]})')).toBeTruthy()
 })
+
+test('([)] is unbalanced', () => {
+  expect(balanceBrackets('([)]')).toEqual(false)
+})
